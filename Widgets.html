@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Widgets.html - describes a form for ordering widgets and references Widgets.php to process the data. -->
+<html lang = "en">
+	<head>
+		<title> Widget Sales </title>
+		<meta charset = "utf-8" />
+		<style type = "text/css">
+			td, th, table {border: thin solid black;}
+		</style>
+	</head>
+	<body>
+		<form 	action = "http://localhost/Widgets.php"
+				method = "post">
+			<h2> Welcome to the Widget Center </h2>
+				<p>
+				<table>
+					<tr>
+						<th> Product </th>
+						<th> Price </th>
+						<th> Quantity </th>
+					</tr>
+					<tr>
+						<td> Model 37AX-L </td>
+						<td> $12.45 </td>
+						<td> <input type = "text" name = "modelA" size = "3" /></td>
+					</tr>
+					<tr>
+						<td> Model 42XR-J </td>
+						<td> $15.34 </td>
+						<td> <input type = "text" name = "modelB" size = "3" /></td>
+					<tr>
+						<td> Model 93ZZ-A </td>
+						<td> $28.99 </td>
+						<td> <input type = "text" name = "modelC" size = "3" /></td>
+					</tr>
+					<tr>
+						<td> Buyer State: </td>
+						<td> <input type = "text" name = "state" size = "30" /></td>
+					</tr>
+				</table>
+				</p>
+				<p>
+				<input type = "submit" value = "Submit Order" />
+				<input type = "reset" value = "Clear Order Form" />
+				</p>
+		</form>
+	</body>
+</html>
+			
